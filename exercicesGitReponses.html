@@ -1,0 +1,104 @@
+
+<!-- 1 Créer un nouveau dépôt Git en utilisant la commande git init. -->
+ accéder au répertoire où vous souhaitez créer le dépôt. Ensuite, exécutez la commande git init pour initialiser un nouveau dépôt Git dans ce répertoire:
+cd mon_projet
+git init
+
+ <!-- 2 Ajouter un fichier au dépôt en utilisant la commande git add. -->
+git add git.html
+ou 
+git add .
+
+
+<!-- 3 Vérifier l'état du dépôt en utilisant la commande git status. -->
+git status
+affiche les fichiers modifiés, ajoutés et supprimés, ainsi que la branche active et d'autres informations sur l'état du dépôt:
+
+<!-- 4 Effectuer un commit en utilisant la commande git commit. -->
+git commit -m "first commit"
+
+<!-- 5 Ajouter un deuxième fichier et effectuer un commit. -->
+creez un fichier deuxièmeFichier.html
+git status
+git add deuxièmeFichier.html
+git commit -m "deuxièmeFichier.html"
+
+
+<!-- 5 Ajouter un troisième fichier et effectuer un commit. -->
+
+creez un fichier troisiemeFichier.txt
+git status
+git add troisiemeFichier.txt
+git commit -m "troisiemeFichier.txt"
+
+
+git config --global user.name "salsyl" 
+git config --global user.email "csgonesse@hotmail.fr" 
+
+<!-- 6 Vérifier l'historique des commits en utilisant la commande git log. -->
+  git log.
+   affiche la liste des commits, avec leur message, leur auteur, leur date et leur identifiant de commit:
+   q pour sortir
+
+<!-- 7 Créer une nouvelle branche en utilisant la commande git branch. -->
+Commencez par un préfixe pour indiquer le type de branche 
+git branch cours-git/premiere-branche
+
+<!-- 8 Basculer sur la nouvelle branche en utilisant la commande git checkout. -->
+git checkout cours-git/premiere-branche
+
+<!-- 9 Modifier un fichier et effectuer un commit sur la nouvelle branche. -->
+git status
+git add mon_fichier_modifie.txt
+git commit -m "Modification sur la nouvelle branche"
+
+<!-- 10 Basculer sur la branche principale en utilisant la commande git checkout. -->
+git checkout +  nom de la branche principale:
+git checkout master
+
+<!-- 11 Fusionner la branche de travail dans la branche principale en utilisant la commande git merge. -->
+git merge suivie du nom de la branche à fusionner:
+git merge cours-git/premiereB
+
+<!-- 12 Modifier un fichier sur la branche principale et effectuer un commit. -->
+utilisez les mêmes commandes que pour le premier fichier:
+git add exercicesGitReponses.html
+git commit -m "Modification d'exercicesGitReponses.html sur master"
+
+<!-- 13 Supprimer un fichier en utilisant la commande git rm. -->
+git rm quatre.pdf
+git commit -m "Suppression quatre.pdf"
+
+<!-- 14 Renommer un fichier en utilisant la commande git mv. -->
+exécutez la commande git mv suivie du nom du fichier existant et du nouveau nom :
+git mv exercices.html exercicesVide.html
+git commit -m "Renommage d'exercices.html en exercicesVide.html"
+
+<!-- 15 Cloner un dépôt Git distant en utilisant la commande git clone. -->
+Pour cloner un dépôt Git distant en utilisant la commande git clone, exécutez la commande git clone suivie de l'URL du dépôt distant:
+git clone https://github.com/saloum-sylla/git-clone-Repository-.git
+
+
+<!-- 16 Mettre à jour le dépôt local avec les modifications du dépôt distant en utilisant la commande git pull. -->
+git status
+git pull
+
+<!-- 18 utiliser la commande git remote add origin pour ajouter un référentiel distant  -->
+git remote add origin url du référentiel
+git remote add origin https://github.com/salsyl/exercices
+Pour changer le référentiel distant (remote) 
+git remote -v
+git remote set-url origin <nouvelle URL>
+git remote set-url origin https://github.com/salsyl/exercices
+
+<!-- 19 envoyer les modifications locales au dépôt distant en utilisant la commande git push -->
+git push suivie du nom de la branche à pousser:
+git push origin master
+si Please make sure you have the correct access rights and the repository exists.
+creez un repository 
+
+
+<!-- 20 Ignorer un fichier en créant un fichier .gitignore contenant le nom du fichier ou du dossier à ignorer. -->
+git revert HEAD
+créez un nouveau fichier .gitignore dans le répertoire racine du dépôt et ajoutez le nom du fichier ou du dossier à ignorer.
+
